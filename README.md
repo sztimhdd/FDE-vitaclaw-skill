@@ -4,7 +4,8 @@
 
 [English](#english) | [中文](#中文)
 
-![FDE Operator OS Banner](./assets/readme/banner.svg)
+![FDE Operator OS Banner EN](./assets/readme/banner-en.svg)
+![FDE Operator OS Banner ZH](./assets/readme/banner-zh.svg)
 
 </div>
 
@@ -66,27 +67,6 @@ It also ships with eight operator artifacts:
 - POC Acceptance Contract
 - Expansion Roadmap
 
-### Flow
-
-```mermaid
-flowchart LR
-    A["Mission Qualification"] --> B["Operational Reality Capture"]
-    B --> C["System Framing"]
-    C --> D["Ontology & Action Model"]
-    D --> E["Intervention & Pilot Design"]
-    E --> F["Delivery Architecture"]
-    F --> G["Expansion Logic"]
-
-    A -.-> H["Mission Brief"]
-    B -.-> I["Operational Reality Map"]
-    C -.-> J["System Problem Frame"]
-    D -.-> K["Ontology & Action Model"]
-    E -.-> L["AI Intervention Design"]
-    E -.-> M["Minimum Viable Loop"]
-    F -.-> N["POC Acceptance Contract"]
-    G -.-> O["Expansion Roadmap"]
-```
-
 ### Repository Layout
 
 ```text
@@ -102,7 +82,8 @@ fde-operator-os/
 │   └── failure-patterns.md
 └── assets/
     ├── readme/
-    │   └── banner.svg
+    │   ├── banner-en.svg
+    │   └── banner-zh.svg
     └── templates/
         ├── mission-brief.md
         ├── operational-reality-map.md

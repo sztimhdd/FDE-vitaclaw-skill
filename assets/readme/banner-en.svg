@@ -1,0 +1,72 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="84" y1="54" x2="1184" y2="586" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071427"/>
+      <stop offset="0.52" stop-color="#10243F"/>
+      <stop offset="1" stop-color="#123F53"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="130" y1="108" x2="1152" y2="522" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C172A" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#15263A" stop-opacity="0.90"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="182" y1="178" x2="1066" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#53E3C2"/>
+      <stop offset="0.55" stop-color="#50B8FF"/>
+      <stop offset="1" stop-color="#F6A723"/>
+    </linearGradient>
+    <filter id="shadow" x="96" y="86" width="1092" height="468" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="12"/>
+      <feGaussianBlur stdDeviation="17"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0117647 0 0 0 0 0.054902 0 0 0 0 0.117647 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" rx="36" fill="url(#bg)"/>
+  <circle cx="168" cy="104" r="182" fill="#50B8FF" fill-opacity="0.07"/>
+  <circle cx="1124" cy="528" r="186" fill="#53E3C2" fill-opacity="0.08"/>
+
+  <path d="M100 498C230 438 332 415 440 422C568 430 670 490 798 488C922 486 1034 435 1178 314" stroke="url(#accent)" stroke-opacity="0.26" stroke-width="2"/>
+  <path d="M100 534C242 478 356 455 475 461C596 468 699 515 820 514C944 513 1050 475 1178 385" stroke="white" stroke-opacity="0.06" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="132" y="118" width="1016" height="378" rx="30" fill="url(#panel)" stroke="rgba(255,255,255,0.1)"/>
+
+    <rect x="184" y="176" width="158" height="34" rx="17" fill="#0C2133"/>
+    <text x="208" y="198" fill="#A2D7F8" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="0.08em">OPERATOR SKILL</text>
+
+    <text x="184" y="292" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">FDE Operator OS</text>
+    <text x="184" y="345" fill="#C9D8EA" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="500">Qualify AI bets. Model messy reality. Design delivery-ready loops.</text>
+
+    <rect x="184" y="392" width="166" height="50" rx="15" fill="#0E2234"/>
+    <text x="209" y="423" fill="#E5F4FF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Mission Fit</text>
+
+    <rect x="368" y="392" width="188" height="50" rx="15" fill="#10253B"/>
+    <text x="393" y="423" fill="#E5F4FF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Reality Capture</text>
+
+    <rect x="575" y="392" width="170" height="50" rx="15" fill="#10283A"/>
+    <text x="600" y="423" fill="#E5F4FF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Pilot Loop</text>
+
+    <rect x="763" y="392" width="170" height="50" rx="15" fill="#16301F"/>
+    <text x="788" y="423" fill="#F0FAF5" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Scale Logic</text>
+
+    <circle cx="945" cy="256" r="108" stroke="#2F5977" stroke-width="2"/>
+    <circle cx="945" cy="256" r="84" stroke="#4FA7E7" stroke-opacity="0.42" stroke-width="18"/>
+    <path d="M945 171A85 85 0 0 1 1016 210" stroke="#57DDBD" stroke-width="18" stroke-linecap="round"/>
+    <path d="M1017 302A85 85 0 0 1 945 341" stroke="#F6A723" stroke-width="18" stroke-linecap="round"/>
+    <path d="M874 210A85 85 0 0 1 874 302" stroke="#50B8FF" stroke-width="18" stroke-linecap="round"/>
+
+    <text x="911" y="157" fill="#BFD3E6" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">OBSERVE</text>
+    <text x="1016" y="262" fill="#BFD3E6" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" transform="rotate(90 1016 262)">ORIENT</text>
+    <text x="905" y="371" fill="#E8D6AF" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">DECIDE</text>
+    <text x="842" y="263" fill="#BFD3E6" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" transform="rotate(-90 842 263)">EXECUTE</text>
+
+    <path d="M795 256H848" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="784" cy="256" r="6" fill="#53E3C2"/>
+    <circle cx="1057" cy="256" r="6" fill="#F6A723"/>
+  </g>
+</svg>
