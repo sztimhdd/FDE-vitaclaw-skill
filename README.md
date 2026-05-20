@@ -5,7 +5,6 @@
 [English](#english) | [中文](#中文)
 
 ![FDE Operator OS Banner EN](./assets/readme/banner-en.svg)
-![FDE Operator OS Banner ZH](./assets/readme/banner-zh.svg)
 
 </div>
 
@@ -13,7 +12,7 @@
 
 ## English
 
-An operator-grade Codex skill for forward deployed engineers, applied AI leads, and delivery owners who need to turn messy customer problems into delivery-worthy AI operating loops.
+An operator-grade FDE skill and reusable operator playbook for forward deployed engineers, applied AI leads, and delivery owners who need to turn messy customer problems into delivery-worthy AI operating loops.
 
 ### What It Is
 
@@ -97,7 +96,12 @@ fde-operator-os/
 
 ### Install
 
-Copy the folder into your Codex skills directory:
+You can use this repository in two ways:
+
+1. As a Codex-style skill by copying the folder into your local skills directory.
+2. As a portable FDE playbook by adapting the doctrine, references, and templates to your own agent or delivery workflow.
+
+Example Codex-style install:
 
 ```powershell
 Copy-Item -Recurse .\fde-operator-os "$HOME\.codex\skills\"
@@ -131,7 +135,7 @@ MIT
 
 ## 中文
 
-这是一个面向 Forward Deployed Engineer、Applied AI 交付负责人和方案架构角色的 Codex skill，用来把混乱的客户问题推进成可交付、可验证、可扩展的 AI 运营闭环。
+这是一个面向 Forward Deployed Engineer、Applied AI 交付负责人和方案架构角色的通用 FDE skill / operator playbook，用来把混乱的客户问题推进成可交付、可验证、可扩展的 AI 运营闭环。
 
 ### 它解决什么问题
 
@@ -185,7 +189,12 @@ MIT
 
 ### 安装
 
-把整个目录复制到你的 Codex skills 路径：
+这个仓库可以有两种用法：
+
+1. 作为 Codex 风格 skill，复制到本地 skills 目录。
+2. 作为通用 FDE playbook，把 doctrine、references 和 templates 迁移到你自己的 agent 或交付流程里。
+
+如果按 Codex 风格使用，可以这样安装：
 
 ```powershell
 Copy-Item -Recurse .\fde-operator-os "$HOME\.codex\skills\"
