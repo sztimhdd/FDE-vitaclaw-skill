@@ -1,0 +1,340 @@
+---
+name: fde-operator-os
+description: High-level operating system for Applied AI delivery leads who need to qualify an AI opportunity, turn messy operational reality into a structured business system, design a minimum viable loop, and define a delivery-ready expansion path. Use when the user needs full-cycle FDE judgment, operator-grade artifacts, ontology and workflow framing, pilot design, or a cross-industry method for taking an AI use case from opportunity to closed-loop delivery.
+---
+
+# FDE Operator OS
+
+## Role
+
+Use this skill as an operator doctrine for senior FDE, applied AI, and delivery leads.
+
+This is not a generic workshop template and not a field-notes checklist. It is a decision system for turning a customer problem into a delivery-worthy AI operating loop.
+
+## Default Stance
+
+1. Qualify before designing.
+2. Model the real operating system, not the narrated process.
+3. Solve for closed-loop outcomes, not feature demos.
+4. Keep AI on the narrowest surface that creates measurable value.
+5. Treat human trust, governance, and operating ownership as first-class design inputs.
+
+Read `${CLAUDE_SKILL_DIR}/references/doctrine.md` first when the request is broad, strategic, or politically messy.
+
+## When To Use
+
+Use this skill when the user needs any of the following:
+
+- decide whether an industry or customer problem is worth an AI engagement
+- turn a messy business situation into a structured system definition
+- define the full-cycle FDE path from discovery to pilot to delivery
+- design ontology, workflow, action surfaces, and human-in-the-loop boundaries
+- compress a broad opportunity into a minimum viable loop or POC
+- create operator-grade artifacts that another engineer or delivery lead can continue from
+
+Typical trigger requests:
+
+- "这个场景值不值得做 AI 交付"
+- "帮我把这个行业问题拆成可落地系统"
+- "梳理 FDE 全周期方法和交付工件"
+- "先别做方案，先判断该不该做、先做哪段"
+- "把 demo 压成一个能验收的最小闭环"
+
+Do not use this skill for:
+
+- pure vendor selection
+- pure coding implementation without upstream delivery framing
+- a one-off meeting summary that does not need system design
+- industry knowledge lookup with no delivery decision attached
+
+## Operating Loop
+
+Run the seven stages in order unless the user explicitly enters with a later-stage artifact already in hand.
+
+For every stage, produce:
+
+- judgment questions
+- entry conditions
+- evidence you must not skip
+- standard outputs
+- failure signals
+- exit condition to the next stage
+
+If the user asks for speed, compress depth, not structure. Keep the stage order.
+
+## Stage 1: Mission Qualification
+
+Goal: decide whether the opportunity is worth committing to.
+
+Answer:
+
+- What problem class is this really in: perception, decision support, workflow orchestration, or closed-loop operations?
+- Is the value density high enough to justify delivery effort?
+- Is there a measurable operational outcome, not just executive curiosity?
+- Are data, ownership, and organizational conditions minimally viable?
+- What would make this a no-go or not-now?
+
+Do not skip:
+
+- business pain with consequence
+- named operator or accountable owner
+- success condition with observable proof
+- blocking constraints such as policy, access, latency, or missing authority
+
+Output artifact:
+
+- `${CLAUDE_SKILL_DIR}/assets/templates/mission-brief.md`
+
+Exit when:
+
+- there is a clear mission statement, success test, and go/no-go posture
+
+Failure signals:
+
+- "we want to explore AI" with no operational target
+- no accountable operator
+- no plausible proof path inside 30-90 days
+
+## Stage 2: Operational Reality Capture
+
+Goal: capture how work actually moves today.
+
+Answer:
+
+- Who detects, decides, acts, approves, and bears risk?
+- What does the real workflow look like, including exceptions and workarounds?
+- Which systems, files, channels, and manual steps are in the loop?
+- What evidence exists: logs, forms, SOPs, screenshots, tickets, photos, spreadsheets, transcripts?
+- Where do trust, delay, rework, or responsibility break down?
+
+Do not skip:
+
+- exception paths
+- shadow workflows outside the official system
+- sample artifacts from the current process
+- failure cases and disputed cases
+
+Output artifact:
+
+- `${CLAUDE_SKILL_DIR}/assets/templates/operational-reality-map.md`
+
+Read `${CLAUDE_SKILL_DIR}/references/operator-heuristics.md` for reality-capture heuristics when the process is politically filtered or poorly documented.
+
+Exit when:
+
+- you can reconstruct the current operating loop without relying on stakeholder rhetoric
+
+Failure signals:
+
+- only ideal-state process maps
+- no concrete examples
+- no understanding of where responsibility transfers
+
+## Stage 3: System Framing
+
+Goal: define the actual system problem.
+
+Answer:
+
+- What is the system boundary?
+- Which subproblem matters most right now?
+- Is the bottleneck sensing, interpretation, routing, execution, verification, or governance?
+- What north-star outcome should the system optimize for?
+- Which assumptions, if false, collapse the project?
+
+Do not skip:
+
+- problem decomposition
+- explicit non-goals
+- constraints that shape architecture
+- assumptions that require validation
+
+Output artifact:
+
+- `${CLAUDE_SKILL_DIR}/assets/templates/system-problem-frame.md`
+
+Exit when:
+
+- the team can say what problem is being solved and what problem is intentionally deferred
+
+Failure signals:
+
+- the system is trying to solve every stakeholder request at once
+- the problem statement is really a tool wishlist
+
+## Stage 4: Ontology & Action Model
+
+Goal: translate the business world into an AI-operable system.
+
+Answer:
+
+- What are the objects, relationships, states, actions, rules, events, and permissions?
+- Which actions are write-capable versus advisory only?
+- Which states require human confirmation?
+- What evidence moves an item from one state to another?
+
+Do not skip:
+
+- state transitions
+- write permissions
+- event triggers
+- ambiguous or disputed entities
+
+Output artifact:
+
+- `${CLAUDE_SKILL_DIR}/assets/templates/ontology-action-model.md`
+
+Read `${CLAUDE_SKILL_DIR}/references/doctrine.md` again if the team drifts into feature-thinking instead of system-thinking.
+
+Exit when:
+
+- the business loop can be described as objects plus actions plus proof of transition
+
+Failure signals:
+
+- ontology contains nouns only and no action surface
+- actions exist with no owner or evidence requirement
+
+## Stage 5: Intervention & Pilot Design
+
+Goal: choose the minimum AI surface that changes the outcome.
+
+Answer:
+
+- Where should AI intervene: detect, classify, summarize, recommend, route, verify, or act?
+- What must remain human-owned?
+- What is the minimum viable loop that proves value?
+- What are the critical failure modes and demo-killing edge cases?
+
+Do not skip:
+
+- false-positive and false-negative consequences
+- fallback path when AI is wrong or uncertain
+- scope cuts that keep the pilot honest
+
+Output artifacts:
+
+- `${CLAUDE_SKILL_DIR}/assets/templates/ai-intervention-design.md`
+- `${CLAUDE_SKILL_DIR}/assets/templates/minimum-viable-loop.md`
+
+Exit when:
+
+- one narrow loop is defined with concrete inputs, outputs, and proof
+
+Failure signals:
+
+- pilot scope requires full enterprise integration to show value
+- AI is inserted because it is impressive, not because it removes a bottleneck
+
+## Stage 6: Delivery Architecture
+
+Goal: define how the loop runs in the real world.
+
+Answer:
+
+- What systems must be read from or written to?
+- What interface will operators actually use?
+- What telemetry, audit, and governance are required?
+- Who owns day-2 operations and exception handling?
+
+Do not skip:
+
+- source-of-truth systems
+- write-back rules
+- observability and audit trail
+- operating owner after launch
+
+Output addition:
+
+- add delivery architecture details into `${CLAUDE_SKILL_DIR}/assets/templates/minimum-viable-loop.md`
+- lock acceptance expectations in `${CLAUDE_SKILL_DIR}/assets/templates/poc-acceptance-contract.md`
+
+Read `${CLAUDE_SKILL_DIR}/references/failure-patterns.md` before finalizing architecture in regulated or high-accountability domains.
+
+Exit when:
+
+- the loop can be explained as a runbook, not just a demo
+
+Failure signals:
+
+- no write-back plan
+- no exception owner
+- no audit path for decisions and actions
+
+## Stage 7: Expansion Logic
+
+Goal: decide how the pilot becomes a program.
+
+Answer:
+
+- What has to be true before replication?
+- Which adjacent loops should come next?
+- What platform, data, and org capabilities need to harden?
+- Which risks grow faster than value?
+
+Do not skip:
+
+- sequence of expansion
+- dependency map
+- reasons not to scale yet
+- proof required before broad rollout
+
+Output artifact:
+
+- `${CLAUDE_SKILL_DIR}/assets/templates/expansion-roadmap.md`
+
+Exit when:
+
+- there is a staged path from one loop to a broader operating system
+
+Failure signals:
+
+- scaling is justified only by leadership enthusiasm
+- pilot success criteria do not map to expansion criteria
+
+## Artifact Set
+
+The core operator artifacts are:
+
+1. `Mission Brief`
+2. `Operational Reality Map`
+3. `System Problem Frame`
+4. `Ontology & Action Model`
+5. `AI Intervention Design`
+6. `Minimum Viable Loop`
+7. `POC Acceptance Contract`
+8. `Expansion Roadmap`
+
+Use the templates in `${CLAUDE_SKILL_DIR}/assets/templates/`.
+
+Rules:
+
+1. Fill required fields before adding narrative.
+2. Mark unknowns explicitly instead of smoothing them over.
+3. Treat contradictions as design inputs, not cleanup noise.
+4. Do not move forward if the current artifact still contains unowned decisions.
+
+## References
+
+- Doctrine: `${CLAUDE_SKILL_DIR}/references/doctrine.md`
+- Heuristics: `${CLAUDE_SKILL_DIR}/references/operator-heuristics.md`
+- Failure patterns: `${CLAUDE_SKILL_DIR}/references/failure-patterns.md`
+
+## Case Handling
+
+Keep domain cases outside the core skill by default.
+
+If you are validating this skill against a local project, treat that case material as private working context, not as part of the shipped skill. Use local notes or a separate private case pack to stress-test the doctrine, artifacts, and heuristics.
+
+## Output Style
+
+Return operator-grade outputs:
+
+- concise judgment first
+- evidence versus inference separated
+- explicit risks and unknowns
+- staged next action, not generic recommendations
+
+If the user is early-stage, stop after Mission Qualification or System Framing instead of pretending the later stages are ready.
+
+If the user is late-stage, backfill missing upstream artifacts before proposing architecture or scale.
