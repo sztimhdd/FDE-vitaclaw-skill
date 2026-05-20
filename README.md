@@ -125,6 +125,10 @@ Then use prompts like:
 
 This skill passes the standard skill validation flow with `quick_validate.py`.
 
+### Status
+
+This skill is actively being refined through ongoing FDE work. The core doctrine and artifact set are stable enough to use, but the playbook will continue to evolve as more real-world delivery patterns, failure cases, and operator judgments are distilled into the repository.
+
 ### License
 
 MIT
@@ -217,6 +221,10 @@ Copy-Item -Recurse .\fde-operator-os "$HOME\.codex\skills\"
 ### 验证
 
 该 skill 已通过标准 `quick_validate.py` 校验。
+
+### 当前状态
+
+这套 skill 仍在持续打磨中。当前的 doctrine 和 artifact 体系已经足够稳定，可以直接使用；但随着我自己的 FDE 实践继续推进，仓库里还会不断吸收新的真实交付模式、失败案例和 operator 判断。
 
 ### License
 
