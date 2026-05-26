@@ -154,6 +154,13 @@ It ships with eight core operator artifacts plus one closeout artifact:
 - Expansion Roadmap
 - Asset Distillation Log
 
+Execution-grade support artifacts are also included for pilots and live loops:
+
+- Case Replay Pack
+- Eval Pack
+- Governance And Risk Overlay
+- Day-2 Operations Plan
+
 ### Positioning
 
 This repository is best understood as an Applied AI Operator OS.
@@ -192,6 +199,8 @@ Use [`examples/case-pack-template/`](./examples/case-pack-template/) when you wa
 
 Use [`examples/first-run-minimal-loop/`](./examples/first-run-minimal-loop/) when you want to see how a first-time user should narrow scope and stop at the right point.
 
+Use [`examples/synthetic-public-safety-ai/operator-loop-pack.md`](./examples/synthetic-public-safety-ai/operator-loop-pack.md) when you want one compact synthetic example that shows loop design, case replay, eval, governance, and day-2 fragments together.
+
 ### Repository Layout
 
 ```text
@@ -209,6 +218,8 @@ fde-operator-os/
 │   │   └── README.md
 │   ├── first-run-minimal-loop/
 │   │   └── README.md
+│   ├── synthetic-public-safety-ai/
+│   │   └── operator-loop-pack.md
 │   └── synthetic-exception-closure-ai/
 │       ├── input-notes.md
 │       ├── 01-mission-brief.md
@@ -227,6 +238,7 @@ fde-operator-os/
 │   ├── asset-distillation-loop.md
 │   ├── operator-heuristics.md
 │   ├── failure-patterns.md
+│   ├── engagement-modes.md
 │   └── runtime-portability.md
 └── assets/
     ├── readme/
@@ -238,6 +250,10 @@ fde-operator-os/
         ├── system-problem-frame.md
         ├── ontology-action-model.md
         ├── ai-intervention-design.md
+        ├── case-replay-pack.md
+        ├── eval-pack.md
+        ├── governance-and-risk-overlay.md
+        ├── day-2-operations-plan.md
         ├── minimum-viable-loop.md
         ├── poc-acceptance-contract.md
         ├── expansion-roadmap.md
@@ -455,6 +471,13 @@ Use $fde-operator-os。
 - Expansion Roadmap
 - Asset Distillation Log
 
+同时也补入了更偏 execution-grade 的 support artifacts：
+
+- Case Replay Pack
+- Eval Pack
+- Governance And Risk Overlay
+- Day-2 Operations Plan
+
 ### 定位
 
 这个仓库更准确的定位是 `Applied AI Operator OS`。
@@ -490,6 +513,8 @@ Use $fde-operator-os。
 可以看 [`examples/synthetic-exception-closure-ai/`](./examples/synthetic-exception-closure-ai/)，里面放了一个小型 synthetic case，既展示交付工件，也展示项目后如何回流成资产。
 
 如果你第一次使用，先看 [`examples/first-run-minimal-loop/`](./examples/first-run-minimal-loop/)，它专门演示怎么先收窄一个 loop、以及应该停在哪一阶段。
+
+如果你想快速看一份更接近交付层的合成打包示例，可以看 [`examples/synthetic-public-safety-ai/operator-loop-pack.md`](./examples/synthetic-public-safety-ai/operator-loop-pack.md)。
 
 ### 安装
 

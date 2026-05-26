@@ -89,3 +89,39 @@ Symptoms:
 Correction:
 
 - require asset distillation at project close and promote reusable patterns, eval cases, governance checks, or tooling
+
+## Pattern 9: Eval Theater
+
+Symptoms:
+
+- success criteria exist but no representative test cases exist
+- demo cases are cherry-picked
+- failure cases are not collected
+
+Correction:
+
+- require eval pack with golden, failure, edge, ambiguous, and demo-killing cases
+
+## Pattern 10: Governance Fog
+
+Symptoms:
+
+- AI authority is vague
+- human-in-the-loop is claimed but not located
+- no audit or rollback path exists
+
+Correction:
+
+- require governance and risk overlay before write-capable or operationally influential actions
+
+## Pattern 11: Day-2 Collapse
+
+Symptoms:
+
+- pilot works only while the builder is present
+- exceptions have no owner
+- degradation is discovered through user complaints
+
+Correction:
+
+- require day-2 operations plan with monitoring, fallback, support, and adoption signals

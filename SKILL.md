@@ -56,6 +56,19 @@ Rules:
 
 This mode exists to prevent first-time use from collapsing into generic account strategy or project recap.
 
+## Engagement Modes
+
+Use `${CLAUDE_SKILL_DIR}/references/engagement-modes.md` to adapt the doctrine to different field situations without forcing every request through the deepest possible output.
+
+Default modes:
+
+- Discovery Sprint
+- Pilot Design
+- Deployment Rescue
+- Post-Delivery Asset Distillation
+
+The mode changes where you start, what depth is required, and where you should stop. It does not change the core doctrine.
+
 ## When To Use
 
 Use this skill when the user needs any of the following:
@@ -167,6 +180,7 @@ Do not skip:
 Output artifact:
 
 - `${CLAUDE_SKILL_DIR}/assets/templates/operational-reality-map.md`
+- `${CLAUDE_SKILL_DIR}/assets/templates/case-replay-pack.md` as a supporting artifact when concrete or disputed cases are available
 
 Read `${CLAUDE_SKILL_DIR}/references/operator-heuristics.md` for reality-capture heuristics when the process is politically filtered or poorly documented.
 
@@ -266,6 +280,7 @@ Output artifacts:
 
 - `${CLAUDE_SKILL_DIR}/assets/templates/ai-intervention-design.md`
 - `${CLAUDE_SKILL_DIR}/assets/templates/minimum-viable-loop.md`
+- `${CLAUDE_SKILL_DIR}/assets/templates/eval-pack.md` as a required support artifact for credible pilots
 
 Exit when:
 
@@ -298,6 +313,8 @@ Output addition:
 
 - add delivery architecture details into `${CLAUDE_SKILL_DIR}/assets/templates/minimum-viable-loop.md`
 - lock acceptance expectations in `${CLAUDE_SKILL_DIR}/assets/templates/poc-acceptance-contract.md`
+- define trust, permissions, and rollback in `${CLAUDE_SKILL_DIR}/assets/templates/governance-and-risk-overlay.md`
+- define support, monitoring, and exception ownership in `${CLAUDE_SKILL_DIR}/assets/templates/day-2-operations-plan.md`
 
 Read `${CLAUDE_SKILL_DIR}/references/failure-patterns.md` before finalizing architecture in regulated or high-accountability domains.
 
@@ -356,6 +373,7 @@ Answer:
 - Which failure cases should become test cases?
 - What should be turned into SOP, skill, internal tool, or product backlog?
 - What is still too project-specific to promote?
+- Which day-2 failures or eval failures should be promoted into reusable checks, cases, or overlays?
 
 Do not skip:
 
@@ -392,9 +410,16 @@ The core operator artifacts are:
 7. `POC Acceptance Contract`
 8. `Expansion Roadmap`
 
+Execution-grade support artifacts should also be used when the loop reaches pilot or deployment depth:
+
+9. `Case Replay Pack`
+10. `Eval Pack`
+11. `Governance And Risk Overlay`
+12. `Day-2 Operations Plan`
+
 Post-delivery closeout should also produce:
 
-9. `Asset Distillation Log`
+13. `Asset Distillation Log`
 
 Use the templates in `${CLAUDE_SKILL_DIR}/assets/templates/`.
 
@@ -411,6 +436,7 @@ Rules:
 - Heuristics: `${CLAUDE_SKILL_DIR}/references/operator-heuristics.md`
 - Failure patterns: `${CLAUDE_SKILL_DIR}/references/failure-patterns.md`
 - Asset distillation: `${CLAUDE_SKILL_DIR}/references/asset-distillation-loop.md`
+- Engagement modes: `${CLAUDE_SKILL_DIR}/references/engagement-modes.md`
 
 ## Case Handling
 

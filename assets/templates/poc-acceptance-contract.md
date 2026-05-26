@@ -7,10 +7,17 @@ Use to lock how the pilot will be judged before it is built or demoed.
 ## Required Fields
 
 - POC objective
+- Baseline
 - Success criteria
 - Failure criteria
+- Measurement window
 - Demo path
+- Eval pack link
 - Required evidence
+- Review cadence
+- Rollback condition
+- Required reviewer
+- Decision gate
 - Known exclusions
 - Decision after review
 
@@ -34,10 +41,17 @@ Success and failure are judgeable by an external reviewer without rewriting the 
 # POC Acceptance Contract
 
 - **POC objective**:
+- **Baseline**:
 - **Success criteria**:
 - **Failure criteria**:
+- **Measurement window**:
 - **Demo path**:
+- **Eval pack link**:
 - **Required evidence**:
+- **Review cadence**:
+- **Rollback condition**:
+- **Required reviewer**:
+- **Decision gate**:
 - **Known exclusions**:
 - **Decision after review**:
 ```

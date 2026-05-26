@@ -9,12 +9,16 @@ case-packs/
     ├── operator-artifacts/
     │   ├── 01-mission-brief.md
     │   ├── 02-operational-reality-map.md
-    │   ├── 03-system-problem-frame.md
-    │   ├── 04-state-action-evidence-model.md
-    │   ├── 05-ai-intervention-design.md
-    │   ├── 06-minimum-viable-loop.md
-    │   ├── 07-poc-acceptance-contract.md
-    │   └── 08-expansion-roadmap.md
+    │   ├── 03-case-replay-pack.md
+    │   ├── 04-system-problem-frame.md
+    │   ├── 05-state-action-evidence-model.md
+    │   ├── 06-ai-intervention-design.md
+    │   ├── 07-minimum-viable-loop.md
+    │   ├── 08-poc-acceptance-contract.md
+    │   ├── 09-eval-pack.md
+    │   ├── 10-governance-and-risk-overlay.md
+    │   ├── 11-day-2-operations-plan.md
+    │   └── 12-expansion-roadmap.md
     ├── reusable-patterns.md
     ├── eval-cases.md
     ├── product-feedback.md

@@ -7,6 +7,7 @@ Use to define the pilot as one end-to-end operating loop, not a bag of features.
 ## Required Fields
 
 - Trigger input
+- Baseline manual path
 - AI judgment or transformation
 - Action or routing step
 - Human confirmation step
@@ -15,6 +16,10 @@ Use to define the pilot as one end-to-end operating loop, not a bag of features.
 - Archive / audit
 - Required integrations
 - Operating owner
+- Operator adoption signal
+- Day-2 maintenance burden
+- Drift / degradation signal
+- Rollback condition
 
 ## Optional Fields
 
@@ -36,6 +41,7 @@ Another delivery lead should be able to turn this artifact into a runbook and a 
 # Minimum Viable Loop
 
 - **Trigger input**:
+- **Baseline manual path**:
 - **AI judgment / transformation**:
 - **Action / routing**:
 - **Human confirmation**:
@@ -45,5 +51,9 @@ Another delivery lead should be able to turn this artifact into a runbook and a 
 - **Required integrations**:
 - **Operator interface**:
 - **Operating owner**:
+- **Operator adoption signal**:
+- **Day-2 maintenance burden**:
+- **Drift / degradation signal**:
+- **Rollback condition**:
 - **Fallback mode**:
 ```
