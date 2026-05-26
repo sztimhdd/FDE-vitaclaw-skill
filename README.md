@@ -47,6 +47,87 @@ It is not optimized for:
 - generic AI workshops
 - one-off coding tasks with no delivery framing
 
+### When To Use It
+
+Use this repository when you are still doing upstream FDE work such as:
+
+- deciding whether an AI opportunity is worth pursuing
+- compressing a messy customer situation into one delivery-worthy loop
+- defining operator, trigger, object, output, and acceptance before build
+- designing pilot boundaries, human-in-the-loop control, and evidence flow
+- preventing a project from drifting into AI theater, pilot bloat, or free-form solutioning
+
+In short:
+
+> Use it when you do **not** yet have a trustworthy operator loop, but need one.
+
+### When Not To Use It First
+
+Do not reach for this repository first when:
+
+- the loop is already defined and the team just needs to implement
+- the task is only note-taking, minutes, or transcript cleanup
+- the work is only vendor comparison or product selection
+- the request is only coding, debugging, or build execution
+
+In short:
+
+> If the problem is already framed and only execution remains, this is no longer the main tool.
+
+### First-Time Use
+
+The most common mistake is to use this repository to analyze an entire account, project, or sales motion on the first run.
+
+Do this instead:
+
+1. pick **one operator**
+2. pick **one trigger**
+3. pick **one business object**
+4. pick **one output**
+5. run the skill on that bounded loop before expanding outward
+
+Recommended first-run stopping point:
+
+- Mission Brief
+- Operational Reality Map
+- System Problem Frame
+- State, Action & Evidence Model
+- AI Intervention Design
+- Minimum Viable Loop
+- POC Acceptance Contract
+
+Do **not** force Delivery Architecture or Expansion Logic on the first run if operational evidence is still thin.
+
+### 60-Second Quickstart
+
+Example prompt:
+
+```text
+Use $fde-operator-os.
+
+Do not analyze the whole project.
+Run one bounded loop only:
+
+- Scenario: warehouse exception closure
+- Operator: floor supervisor
+- Trigger: exception alert arrives
+- Output: confirmed closure task with audit record
+
+Produce the core operator artifacts up to POC Acceptance Contract.
+```
+
+### How It Helps FDE Work
+
+This repository is most useful when an FDE needs help doing five things well:
+
+1. determine whether an opportunity has enough operational density to justify delivery
+2. reconstruct real work instead of repeating narrated process
+3. narrow the system to the right bottleneck
+4. turn business ambiguity into objects, states, actions, permissions, and evidence
+5. define a pilot that can actually be judged, not just demoed
+
+That is why the main value is not "better brainstorming." The main value is **better loop definition**.
+
 ### Core Model
 
 The skill runs a seven-stage decision chain:
@@ -109,15 +190,24 @@ See [`examples/synthetic-exception-closure-ai/`](./examples/synthetic-exception-
 
 Use [`examples/case-pack-template/`](./examples/case-pack-template/) when you want a reusable layout for future domain cases.
 
+Use [`examples/first-run-minimal-loop/`](./examples/first-run-minimal-loop/) when you want to see how a first-time user should narrow scope and stop at the right point.
+
 ### Repository Layout
 
 ```text
 fde-operator-os/
+├── aliases/
+│   └── fde/
+│       ├── SKILL.md
+│       └── agents/
+│           └── openai.yaml
 ├── SKILL.md
 ├── README.md
 ├── LICENSE
 ├── examples/
 │   ├── case-pack-template/
+│   │   └── README.md
+│   ├── first-run-minimal-loop/
 │   │   └── README.md
 │   └── synthetic-exception-closure-ai/
 │       ├── input-notes.md
@@ -136,7 +226,8 @@ fde-operator-os/
 │   ├── doctrine.md
 │   ├── asset-distillation-loop.md
 │   ├── operator-heuristics.md
-│   └── failure-patterns.md
+│   ├── failure-patterns.md
+│   └── runtime-portability.md
 └── assets/
     ├── readme/
     │   ├── banner-en.svg
@@ -177,6 +268,7 @@ You can use this repository in two ways:
 
 1. As a Codex-style skill by copying the folder into your local skills directory.
 2. As a portable Applied AI delivery playbook by adapting the doctrine, references, and templates to your own agent or delivery workflow.
+3. As a host-neutral skill pack for OpenClaw, Hermes, Claude Code, or other runtimes that can reuse prompt packs, templates, and references.
 
 Example Codex-style install:
 
@@ -189,6 +281,13 @@ Then use prompts like:
 - `Use $fde-operator-os to decide whether this AI opportunity is worth pursuing.`
 - `Use $fde-operator-os to turn this workflow into a minimum viable loop.`
 - `Use $fde-operator-os to define the operator artifacts for this pilot.`
+
+Optional short alias for hosts that support wrappers:
+
+- copy `aliases/fde/` into your host's skill root as `fde`
+- invoke with `$fde` or map `/FDE` in hosts that support slash aliases
+
+See [`references/runtime-portability.md`](./references/runtime-portability.md) for host-neutral guidance across Codex, OpenClaw, Hermes, and Claude Code.
 
 ### Design Principles
 
@@ -247,6 +346,88 @@ MIT
 - 纯 prompt 调优
 - 泛 AI 培训工作坊
 - 没有交付 framing 的一次性编码任务
+
+### 什么时候用
+
+当你还在做 FDE 上游工作时，这个仓库最有用，比如：
+
+- 判断一个 AI 机会值不值得做
+- 把混乱业务机会压缩成一个可交付 loop
+- 在开发前先定义 operator、trigger、object、output 和 acceptance
+- 定义 pilot 边界、人机协同边界和证据流
+- 防止项目滑向 AI theater、pilot bloat 或泛化方案堆叠
+
+一句话：
+
+> 当你还没有一个可信的 operator loop，但需要尽快压出一个时，用它。
+
+### 什么时候不要先用
+
+下面这些情况，不要先拿它当主工具：
+
+- loop 已经定义清楚，只剩编码实现
+- 只是整理会议纪要或转写
+- 只是做供应商比较或产品选型
+- 只是做编码、调试或构建执行
+
+一句话：
+
+> 如果问题已经 framing 完了，只剩执行，它就不是主工具了。
+
+### 第一次怎么用
+
+第一次最容易犯的错，是让它一上来分析整个项目、整个客户、整个售前链路。
+
+正确做法是先收窄：
+
+1. 选 **一个 operator**
+2. 选 **一个 trigger**
+3. 选 **一个 business object**
+4. 选 **一个 output**
+5. 先在这个 bounded loop 上跑一遍，再决定要不要扩
+
+第一次推荐先跑到这里：
+
+- Mission Brief
+- Operational Reality Map
+- System Problem Frame
+- State, Action & Evidence Model
+- AI Intervention Design
+- Minimum Viable Loop
+- POC Acceptance Contract
+
+如果一手 operational evidence 还不够，不要为了“完整”硬写 Delivery Architecture 和 Expansion Logic。
+
+### 60 秒上手
+
+示例提示词：
+
+```text
+Use $fde-operator-os。
+
+不要分析整个项目，只跑一个 bounded loop：
+
+- 场景：仓储异常闭环
+- operator：楼层主管
+- trigger：异常告警到达
+- output：带审计记录的确认闭环任务
+
+请输出从 Mission Brief 到 POC Acceptance Contract 的核心工件。
+```
+
+### 它如何帮助 FDE 工作
+
+它最擅长帮助 FDE 做好 5 件事：
+
+1. 判断机会是否有足够 operational density，值得交付
+2. 还原真实工作，而不是复述口头流程
+3. 把系统收敛到正确 bottleneck
+4. 把业务歧义翻译成 objects、states、actions、permissions 和 evidence
+5. 定义一个真的能被验收，而不只是能被 demo 的 pilot
+
+所以它的价值不在“帮你想更多点子”，而在：
+
+**帮你把 loop 定义得更硬。**
 
 ### 核心框架
 
@@ -308,12 +489,15 @@ MIT
 
 可以看 [`examples/synthetic-exception-closure-ai/`](./examples/synthetic-exception-closure-ai/)，里面放了一个小型 synthetic case，既展示交付工件，也展示项目后如何回流成资产。
 
+如果你第一次使用，先看 [`examples/first-run-minimal-loop/`](./examples/first-run-minimal-loop/)，它专门演示怎么先收窄一个 loop、以及应该停在哪一阶段。
+
 ### 安装
 
 这个仓库可以有两种用法：
 
 1. 作为 Codex 风格 skill，复制到本地 skills 目录。
 2. 作为通用 Applied AI 交付 playbook，把 doctrine、references 和 templates 迁移到你自己的 agent 或交付流程里。
+3. 作为面向 OpenClaw、Hermes、Claude Code 等 runtime 的通用 skill / prompt pack 使用。
 
 如果按 Codex 风格使用，可以这样安装：
 
@@ -326,6 +510,14 @@ Copy-Item -Recurse .\fde-operator-os "$HOME\.codex\skills\"
 - `Use $fde-operator-os to decide whether this AI opportunity is worth pursuing.`
 - `Use $fde-operator-os to turn this workflow into a minimum viable loop.`
 - `Use $fde-operator-os to define the operator artifacts for this pilot.`
+
+如果宿主支持短别名或 wrapper，也可以：
+
+- 把 `aliases/fde/` 复制成一个短名 skill
+- 用 `$fde`
+- 或在支持 slash alias 的宿主里映射 `/FDE`
+
+跨 runtime 适配建议见 [`references/runtime-portability.md`](./references/runtime-portability.md)。
 
 ### 设计原则
 

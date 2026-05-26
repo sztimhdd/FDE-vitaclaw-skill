@@ -1,0 +1,4 @@
+interface:
+  display_name: "FDE"
+  short_description: "Alias for Applied AI Operator OS"
+  default_prompt: "Use $fde-operator-os to qualify an AI opportunity, model the operating system, define a delivery-ready pilot, and distill reusable assets from the work."

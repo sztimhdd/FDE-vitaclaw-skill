@@ -11,6 +11,8 @@ Use when the team must reconstruct how work actually happens today.
 - Current-state workflow
 - Systems and channels in use
 - Evidence artifacts
+- Clean case replay
+- Ugly case replay
 - Exception paths
 - Known failure points
 
@@ -61,6 +63,14 @@ A delivery lead should be able to replay one clean case and one ugly case end-to
 - Form / spreadsheet:
 - Screenshot / photo:
 - Ticket / log:
+
+## Clean Case Replay
+
+- ...
+
+## Ugly Case Replay
+
+- ...
 
 ## Exception Paths
 

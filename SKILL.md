@@ -5,6 +5,23 @@ description: Applied AI operator playbook for delivery leads who need to qualify
 
 # Applied AI Operator OS
 
+## Canonical Name And Aliases
+
+Canonical skill name:
+
+- `fde-operator-os`
+
+Recommended short aliases:
+
+- `fde`
+- `applied`
+
+Important:
+
+- The canonical workflow and artifacts remain the same under all names.
+- Slash-command behavior such as `/FDE` depends on the host runtime.
+- If a runtime does not support aliases natively, keep `fde-operator-os` as the canonical package name and add local wrappers or prompt aliases in that host.
+
 ## Role
 
 Use this skill as an operator doctrine for senior FDE, applied AI, and delivery leads.
@@ -21,8 +38,23 @@ FDE here is not on-site outsourcing. It is the operating role that turns field a
 4. Keep AI on the narrowest surface that creates measurable value.
 5. Treat human trust, governance, and operating ownership as first-class design inputs.
 6. Every delivery should leave behind at least one reusable asset.
+7. If the account context is broad, pick one operator loop before summarizing the whole project.
 
 Read `${CLAUDE_SKILL_DIR}/references/doctrine.md` first when the request is broad, strategic, or politically messy.
+
+## First-Run Mode
+
+Use this mode when the user is trying the skill for the first time, or when the workspace contains broad strategy, sales, or project-management material that could drown the core FDE loop.
+
+Rules:
+
+1. Choose **one operator, one object, one trigger, and one output loop** before reading the whole account.
+2. Prefer running **Stage 2 -> Stage 5 + POC Acceptance Contract** on that bounded loop.
+3. Explicitly list what is **out of scope** for this run.
+4. Stop before Delivery Architecture if operational evidence is still thin.
+5. Treat broad project summaries as background only; the main output should be loop-operable artifacts.
+
+This mode exists to prevent first-time use from collapsing into generic account strategy or project recap.
 
 ## When To Use
 
@@ -49,6 +81,19 @@ Do not use this skill for:
 - pure coding implementation without upstream delivery framing
 - a one-off meeting summary that does not need system design
 - industry knowledge lookup with no delivery decision attached
+
+## FDE Boundary Discipline
+
+Keep the output inside the FDE lane unless the user explicitly asks for broader account work.
+
+Default exclusions:
+
+- pricing and packaging debate
+- relationship mapping that does not affect loop ownership
+- generic project status reporting
+- broad leadership narrative with no effect on operator, authority, evidence, or acceptance
+
+If those topics do affect viability, mention them only as constraints on the loop, not as the center of the artifact set.
 
 ## Operating Loop
 
@@ -113,6 +158,8 @@ Answer:
 Do not skip:
 
 - exception paths
+- one clean case replay
+- one ugly case replay
 - shadow workflows outside the official system
 - sample artifacts from the current process
 - failure cases and disputed cases
