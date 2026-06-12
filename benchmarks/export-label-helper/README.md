@@ -1,26 +1,39 @@
 # Export Label Helper Benchmark
 
-This benchmark is a private-case style UAT fixture for evaluating whether `fde-operator-os` can transform messy customer materials into operator-grade FDE artifacts.
+This benchmark is the first real-world UAT fixture for the VitaClaw FDE skill.
 
-The benchmark is intentionally kept outside the core skill doctrine.
+It evaluates whether the skill can transform messy customer materials into operator-grade artifacts and a coding-agent handoff contract.
+
+The benchmark is intentionally outside the core skill doctrine.
 
 ## Case Summary
 
-A seafood export business handles PO, AWB, health certificate, printed labels, and a customer-maintained cross-check spreadsheet. The current manual process checks whether labels match the correct source documents before shipment. The desired AI loop is label validation, not label generation.
+A seafood export business handles PO, AWB, health certificate, printed labels, and a customer-maintained cross-check spreadsheet.
+
+The current manual process checks whether printed labels match the right source documents before shipment.
+
+The desired AI loop is label validation, not label generation.
 
 ## What This Benchmark Tests
 
-- Can the skill avoid reducing the case to generic OCR?
-- Can it identify the shipment/package as the core operating object?
-- Can it separate customer intent, logistics truth, compliance truth, and final label output?
-- Can it build a validation matrix from documents, spreadsheet rules, and interview notes?
-- Can it control scope and avoid production write-back or blocking automation?
-- Can it produce a downstream coding-agent handoff contract?
+- Does the skill avoid reducing the case to generic document extraction?
+- Does it identify shipment/package as the core operating object?
+- Does it separate customer intent, logistics facts, compliance facts, and final label output?
+- Does it build a source-authority and comparison matrix?
+- Does it control scope and avoid automatic production write-back?
+- Does it produce a downstream coding-agent handoff contract?
 
 ## Directory Layout
 
 ```text
 benchmarks/export-label-helper/
+├── README.md
+├── source-materials/
+│   ├── manifest.md
+│   ├── final-prd/
+│   │   └── PRD.md
+│   └── raw-files/
+│       └── README.md
 ├── input/
 │   ├── customer_brief.md
 │   ├── materials_manifest.md
@@ -35,8 +48,14 @@ benchmarks/export-label-helper/
     └── .gitkeep
 ```
 
+## Source Materials
+
+Keep original case materials under `source-materials/` so Codex can read them when refining the benchmark.
+
+Use `source-materials/manifest.md` as the file checklist.
+
 ## Evaluation Rule
 
-Do not expose `expected/` files to the tested skill during blind or progressive evaluation.
+For holdout-style evaluation, do not expose `expected/` or `source-materials/final-prd/` to the tested skill until after the run is complete.
 
-Use `evals/scoring_rubric.md` and `evals/hallucination_checks.md` to score results.
+Use `eval/scoring_rubric.md` and `eval/hallucination_checks.md` to score results.
