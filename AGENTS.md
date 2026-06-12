@@ -1,47 +1,78 @@
-# Repository Agent Instructions
+# AGENTS.md
 
-These instructions apply to coding agents working in this repository.
+Repository instructions for Codex and other coding agents.
 
 ## Mission
 
-Maintain `fde-operator-os` as a host-neutral Applied AI / FDE skill pack that turns messy operational problems into delivery-worthy AI operating loops and reusable assets.
+Maintain this repo as a clean Codex-first FDE skill lab.
+
+The repo should help an agent transform messy customer materials into:
+
+- Mission Brief
+- Object / State / Action / Evidence Model
+- Validation Matrix
+- PRD
+- UAT / Eval Plan
+- Coding Agent Handoff Contract
+
+## Read First
+
+Before editing anything, read:
+
+1. `README.md`
+2. `SKILL.md`
+3. `docs/project_brief.md`
+4. `docs/architecture_decisions.md`
+5. relevant files under `skill/modules/`
+
+When running Export Label Helper tests, read:
+
+1. `benchmarks/export-label-helper/README.md`
+2. `benchmarks/export-label-helper/source-materials/manifest.md`
+3. `benchmarks/export-label-helper/input/*`
+4. expected files only after the test run is complete
 
 ## Hard Boundaries
 
-- Do not build a web UI in this repository.
-- Do not implement OCR, PDF parsing, backend APIs, frontend screens, ASR, TTS, or meeting-copilot features as part of the core skill.
-- Do not hardcode any single customer case into the generic skill doctrine.
-- Keep reusable FDE methodology separate from benchmark and case-pack material.
-- Keep domain cases under `examples/` or `benchmarks/`, not inside the root `SKILL.md` doctrine.
-- Treat benchmarks as test fixtures, not product requirements.
+Do not build these in this repo:
 
-## Required Reading Before Editing
+- web UI
+- backend service
+- frontend app
+- OCR/PDF parser
+- ASR/TTS
+- meeting copilot
+- production browser automation
+- external system write-back tools
 
-Before changing skill behavior, read:
+Do not hardcode benchmark-specific logic into the generic skill.
 
-1. `SKILL.md`
-2. `README.md`
-3. `references/doctrine.md`
-4. `references/runtime-portability.md`
+## Directory Discipline
 
-Before changing benchmark or eval behavior, also read:
+Use the current clean structure:
 
-1. `evals/scoring_rubric.md`
-2. `evals/hallucination_checks.md`
-3. the relevant `benchmarks/<case>/README.md` if present
+- `docs/` for project-level decisions and rationale
+- `skill/` for reusable skill behavior, modules, and templates
+- `benchmarks/` for case packs and source materials
+- `eval/` for scoring and hallucination checks
+- `archive/` for old material not needed by active Codex work
+
+Do not add new top-level folders unless necessary.
 
 ## Output Discipline
 
-- Prefer small, durable markdown artifacts over large narrative documents.
-- Preserve the current core + suite structure.
-- Add new leaf skills only when they represent a repeatable request shape.
-- Every new benchmark should include inputs, expected outputs, and scoring criteria.
-- Mark unknowns explicitly instead of smoothing them over.
+- Prefer short markdown files over long mixed-purpose documents.
+- Keep each file single-purpose.
 - Separate evidence from inference.
+- Mark unknowns explicitly.
+- Keep generic skill doctrine separate from benchmark cases.
+- Update README whenever the directory structure changes.
 
 ## Coding-Agent Handoff Discipline
 
-When this skill prepares work for a downstream coding agent, produce a handoff contract rather than a loose implementation request. The contract must include:
+When preparing implementation work, produce a handoff contract rather than a loose vibe-coding prompt.
+
+The contract must include:
 
 - build goal
 - repo context to inspect first
@@ -51,22 +82,6 @@ When this skill prepares work for a downstream coding agent, produce a handoff c
 - acceptance criteria
 - required tests
 - required evidence
-- rollback notes
+- rollback plan
 
-## Current Roadmap Boundary
-
-Current focus:
-
-1. FDE skill package
-2. benchmark case packs
-3. evaluation and scoring harness
-4. coding-agent handoff contract
-5. runtime-portable documentation
-
-Backlog only, not current roadmap:
-
-- real-time meeting assistant
-- silent meeting copilot
-- ASR/TTS customer-interview insertion
-- production browser automation
-- external system write-back tools
+Use `skill/templates/coding_agent_handoff_contract.md`.
