@@ -21,9 +21,8 @@ Before editing anything, read:
 
 1. `README.md`
 2. `SKILL.md`
-3. `docs/project_brief.md`
-4. `docs/architecture_decisions.md`
-5. relevant files under `skill/modules/`
+3. `codex/PROJECT_BRIEF.md`
+4. relevant files under `skills/`
 
 When running Export Label Helper tests, read:
 
@@ -51,11 +50,12 @@ Do not hardcode benchmark-specific logic into the generic skill.
 
 Use the current clean structure:
 
-- `docs/` for project-level decisions and rationale
-- `skill/` for reusable skill behavior, modules, and templates
+- `agent/` for identity and core principles
+- `skills/` for reusable skill behavior and modules
+- `templates/` for output templates
 - `benchmarks/` for case packs and source materials
-- `eval/` for scoring and hallucination checks
-- `archive/` for old material not needed by active Codex work
+- `evals/` for scoring and hallucination checks
+- `codex/` for agent tasks and prompts
 
 Do not add new top-level folders unless necessary.
 
@@ -84,4 +84,4 @@ The contract must include:
 - required evidence
 - rollback plan
 
-Use `skill/templates/coding_agent_handoff_contract.md`.
+Use `templates/coding_agent_handoff_contract.md`.

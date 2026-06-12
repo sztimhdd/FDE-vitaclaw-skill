@@ -44,47 +44,34 @@ messy customer materials
 ├── AGENTS.md
 ├── README.md
 ├── SKILL.md
-├── docs/
-│   ├── project_brief.md
-│   ├── architecture_decisions.md
-│   ├── roadmap.md
-│   ├── backlog.md
-│   └── runtime_portability.md
-├── skill/
+├── agent/
 │   ├── identity.md
 │   ├── operating_principles.md
-│   ├── modules/
-│   │   ├── mission_qualifier.md
-│   │   ├── reality_capture.md
-│   │   ├── object_modeler.md
-│   │   ├── validation_matrix_builder.md
-│   │   ├── prd_writer.md
-│   │   └── coding_agent_handoff.md
-│   └── templates/
-│       ├── mission_brief.md
-│       ├── object_model.md
-│       ├── validation_matrix.md
-│       ├── prd.md
-│       └── coding_agent_handoff_contract.md
+│   └── soul.md
+├── skills/
+│   ├── 00_router.md
+│   ├── 01_mission_qualifier.md
+│   ├── 02_reality_capture.md
+│   ├── 03_object_modeler.md
+│   ├── 04_validation_matrix_builder.md
+│   ├── 05_prd_writer.md
+│   └── 06_coding_agent_handoff.md
+├── templates/
+│   ├── coding_agent_handoff_contract.md
+│   ├── mission_brief.md
+│   ├── object_model.md
+│   ├── prd.md
+│   └── validation_matrix.md
 ├── benchmarks/
 │   └── export-label-helper/
-│       ├── README.md
-│       ├── source-materials/
-│       │   ├── manifest.md
-│       │   ├── final-prd/
-│       │   │   └── PRD.md
-│       │   └── raw-files/
-│       │       └── README.md
-│       ├── input/
-│       ├── expected/
-│       └── results/
-├── eval/
-│   ├── README.md
-│   ├── scoring_rubric.md
+├── evals/
 │   ├── hallucination_checks.md
-│   └── run_manual_eval.md
-└── archive/
-    └── legacy-operator-os/
+│   ├── run_manual_eval.md
+│   └── scoring_rubric.md
+└── codex/
+    ├── PROJECT_BRIEF.md
+    ├── TASKS.md
+    └── PROMPTS.md
 ```
 
 ## Core Skill Outputs
@@ -116,7 +103,7 @@ It must specify:
 - required evidence
 - rollback plan
 
-Use `skill/templates/coding_agent_handoff_contract.md`.
+Use `templates/coding_agent_handoff_contract.md`.
 
 ## Export Label Helper Benchmark
 
@@ -135,7 +122,7 @@ Do not move benchmark-specific logic into the generic skill.
 
 ## Eval Standard
 
-Use `eval/scoring_rubric.md` and `eval/hallucination_checks.md`.
+Use `evals/scoring_rubric.md` and `evals/hallucination_checks.md`.
 
 Passing thresholds:
 
@@ -150,9 +137,8 @@ Before editing, Codex should read:
 
 1. `AGENTS.md`
 2. `SKILL.md`
-3. `docs/project_brief.md`
-4. `docs/architecture_decisions.md`
-5. relevant files under `skill/modules/`
+3. `codex/PROJECT_BRIEF.md`
+4. relevant files under `skills/`
 6. relevant benchmark files only when running a benchmark
 
 ## Maintenance Rule

@@ -48,20 +48,19 @@ Before changing repository structure or skill behavior, read:
 
 1. `AGENTS.md`
 2. `README.md`
-3. `docs/project_brief.md`
-4. `docs/architecture_decisions.md`
-5. the relevant module under `skill/modules/`
+3. `codex/PROJECT_BRIEF.md`
+4. the relevant module under `skills/`
 
 ## Core Modules
 
-Use the modules under `skill/modules/`:
+Use the modules under `skills/`:
 
-- `mission_qualifier.md` — decide if the opportunity is worth pursuing
-- `reality_capture.md` — reconstruct actual work and evidence
-- `object_modeler.md` — define business objects, states, actions, and evidence
-- `validation_matrix_builder.md` — map fields, source-of-truth, match rules, and tolerance
-- `prd_writer.md` — produce implementation-ready PRD artifacts
-- `coding_agent_handoff.md` — translate FDE artifacts into a downstream coding-agent contract
+- `01_mission_qualifier.md` — decide if the opportunity is worth pursuing
+- `02_reality_capture.md` — reconstruct actual work and evidence
+- `03_object_modeler.md` — define business objects, states, actions, and evidence
+- `04_validation_matrix_builder.md` — map fields, source-of-truth, match rules, and tolerance
+- `05_prd_writer.md` — produce implementation-ready PRD artifacts
+- `06_coding_agent_handoff.md` — translate FDE artifacts into a downstream coding-agent contract
 
 ## Output Artifacts
 
@@ -75,7 +74,7 @@ A complete run may produce:
 6. UAT / Eval Plan
 7. Coding Agent Handoff Contract
 
-Use templates under `skill/templates/`.
+Use templates under `templates/`.
 
 ## Benchmark Rule
 
