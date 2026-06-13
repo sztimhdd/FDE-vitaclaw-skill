@@ -22,7 +22,8 @@ Before editing anything, read:
 1. `README.md`
 2. `SKILL.md`
 3. `codex/PROJECT_BRIEF.md`
-4. relevant files under `skills/`
+4. `codex/DEVELOPMENT_PLAN.md`
+5. relevant files under `skills/`
 
 When running Export Label Helper tests, read:
 
@@ -30,6 +31,20 @@ When running Export Label Helper tests, read:
 2. `benchmarks/export-label-helper/source-materials/manifest.md`
 3. `benchmarks/export-label-helper/input/*`
 4. expected files only after the test run is complete
+
+## Development Plan Discipline
+
+`codex/DEVELOPMENT_PLAN.md` is the canonical execution plan for repo improvement.
+
+Do not start broad implementation work until the relevant batch in the development plan has been reviewed.
+
+Implement one batch at a time:
+
+1. Batch 1 — Repo and Documentation Stabilization
+2. Batch 2 — Skill and Template Quality
+3. Batch 3 — Benchmark and Eval Readiness
+
+Stop after the requested batch. Do not continue into later batches unless explicitly asked.
 
 ## Hard Boundaries
 
@@ -55,7 +70,7 @@ Use the current clean structure:
 - `templates/` for output templates
 - `benchmarks/` for case packs and source materials
 - `evals/` for scoring and hallucination checks
-- `codex/` for agent tasks and prompts
+- `codex/` for project plans, tasks, and prompts
 
 Do not add new top-level folders unless necessary.
 
