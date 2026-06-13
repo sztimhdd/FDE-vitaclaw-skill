@@ -14,6 +14,7 @@ This repo contains:
 - one preserved real-world benchmark case: Export Label Helper
 - evaluation and hallucination checks
 - a coding-agent handoff contract for vibe-coding workflows
+- a staged development plan for future coding-agent sessions
 
 ## What This Repo Is Not
 
@@ -69,10 +70,29 @@ messy customer materials
 │   ├── run_manual_eval.md
 │   └── scoring_rubric.md
 └── codex/
+    ├── DEVELOPMENT_PLAN.md
     ├── PROJECT_BRIEF.md
     ├── TASKS.md
     └── PROMPTS.md
 ```
+
+## Development Plan
+
+`codex/DEVELOPMENT_PLAN.md` is the canonical plan for future coding-agent work.
+
+Use it before starting implementation. It defines:
+
+- current repository assessment
+- target final repository shape
+- file-level quality bar
+- development workstreams
+- task breakdown
+- first three implementation batches
+- smoke test design
+- quality gates
+- the recommended first implementation prompt
+
+Do not jump directly from the repo scaffold into broad implementation. Follow the batches in the development plan.
 
 ## Core Skill Outputs
 
@@ -138,11 +158,12 @@ Before editing, Codex should read:
 1. `AGENTS.md`
 2. `SKILL.md`
 3. `codex/PROJECT_BRIEF.md`
-4. relevant files under `skills/`
+4. `codex/DEVELOPMENT_PLAN.md`
+5. relevant files under `skills/`
 6. relevant benchmark files only when running a benchmark
 
 ## Maintenance Rule
 
 Keep the repo small and artifact-first.
 
-If a file is not useful to skill behavior, benchmark evaluation, or coding-agent handoff, move it to `archive/` or remove it.
+If a file is not useful to skill behavior, benchmark evaluation, project planning, or coding-agent handoff, remove it or explicitly justify why it belongs here.
