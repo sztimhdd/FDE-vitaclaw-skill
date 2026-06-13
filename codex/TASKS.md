@@ -7,6 +7,10 @@
 5. [x] Draft templates
 6. [x] Draft export-label-helper benchmark
 7. [x] Draft eval rubric
-8. [ ] Execute benchmark tests against the FDE Skill
-9. [ ] Run evaluations using rubric
-10. [ ] Iterate on skill templates based on evaluation findings
+8. [x] Create `codex/DEVELOPMENT_PLAN.md`
+9. [ ] Execute Batch 1 from `codex/DEVELOPMENT_PLAN.md` — Repo and Documentation Stabilization
+10. [ ] Execute Batch 2 from `codex/DEVELOPMENT_PLAN.md` — Skill and Template Quality
+11. [ ] Execute Batch 3 from `codex/DEVELOPMENT_PLAN.md` — Benchmark and Eval Readiness
+12. [ ] Execute benchmark tests against the FDE Skill
+13. [ ] Run evaluations using rubric
+14. [ ] Iterate on skill templates based on evaluation findings
