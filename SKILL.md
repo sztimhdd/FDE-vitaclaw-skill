@@ -49,12 +49,26 @@ Before changing repository structure or skill behavior, read:
 1. `AGENTS.md`
 2. `README.md`
 3. `codex/PROJECT_BRIEF.md`
-4. the relevant module under `skills/`
+4. `codex/DEVELOPMENT_PLAN.md`
+5. the relevant module under `skills/`
+
+## Development Plan Rule
+
+`codex/DEVELOPMENT_PLAN.md` is the canonical execution plan for future repository improvement.
+
+When asked to implement repo improvements, follow its batch structure:
+
+1. Batch 1 — Repo and Documentation Stabilization
+2. Batch 2 — Skill and Template Quality
+3. Batch 3 — Benchmark and Eval Readiness
+
+Do not skip directly to broad implementation. Complete and review one batch at a time.
 
 ## Core Modules
 
 Use the modules under `skills/`:
 
+- `00_router.md` — route the current user state to the correct FDE module
 - `01_mission_qualifier.md` — decide if the opportunity is worth pursuing
 - `02_reality_capture.md` — reconstruct actual work and evidence
 - `03_object_modeler.md` — define business objects, states, actions, and evidence
